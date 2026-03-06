@@ -4,7 +4,6 @@ const sequelize = new Sequelize("billing_db", "root", "", {
   host: "localhost",
   dialect: "mysql"
 });
-
 sequelize.authenticate()
   .then(() => {
     console.log("Database connected successfully");
