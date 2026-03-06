@@ -10,6 +10,4 @@ const UsageRecord = sequelize.define('UsageRecord', {
   createdAt: { type: DataTypes.DATE, defaultValue: DataTypes.NOW }
 }, { tableName: 'usagerecords', timestamps: false });
 
-UsageRecord.belongsTo(User, { foreignKey: 'userId' });
-
 module.exports = UsageRecord;

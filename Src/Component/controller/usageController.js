@@ -4,7 +4,6 @@ const UsageRecord = require('../models/usageRecordModel');
 const Plan = require('../models/planModel');
 const { sequelize } = require('../db/db.js');
 
-// controllers/usageController.js
 
 exports.createUsage = async (req, res) => {
   try {

@@ -10,9 +10,4 @@ const Subscription = sequelize.define('Subscription', {
   startDate: { type: DataTypes.DATEONLY, allowNull: false },
   isActive: { type: DataTypes.BOOLEAN, defaultValue: true }
 }, { tableName: 'subscriptions', timestamps: false });
-
-// Associations
-Subscription.belongsTo(User, { foreignKey: 'userId' });
-Subscription.belongsTo(Plan, { foreignKey: 'planId' });
-
 module.exports = Subscription;
